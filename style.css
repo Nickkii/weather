@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap');
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    background: #e9e9e9;
+    text-align: center;
+}
+
+:root {
+    --gradient: linear-gradient( 135deg, #72EDF2 10%, #5151E5 100%);
+}
+
+.location-button {
+    font-family: 'Raleway', sans-serif;
+    width: 200px;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    background-image: var(--gradient);
+    color: #ffffff;
+    font-weight: 700;
+    -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 200ms ease;
+    transition: -webkit-transform 200ms ease;
+    -o-transition: transform 200ms ease;
+    transition: transform 200ms ease;
+    transition: transform 200ms ease, -webkit-transform 200ms ease;
+}
+
+.location-button:hover {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+.location-button .feather {
+    height: 1em;
+    width: auto;
+    margin-right: 5px;
+}
+
+input[type="search" i] {
+    border: none;
+    border-radius: 3px;
+    width: 500px;
+    padding: 10px;
+}
+
+.location-serch {
+    margin: 20px 0;
+    ;
+}
+
+.timeBlock {
+    font-size: 25px;
+    margin: 30px 0;
+}
+
+hr {
+    border: none;
+    width: 700px;
+    height: 1px;
+    background: var(--gradient);
+}
+
+.container {
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    background-color: #040d21;
+    color: #ffffff;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.weather-container {
+    position: absolute;
+}
+
+.weather-temp {
+    margin: 0;
+    font-weight: 700;
+    font-size: 5em;
+}
+
+.weather-desc {
+    margin: 0;
+}
+
+.weather-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: var(--gradient);
+    border-radius: 3px;
+    opacity: 0.8;
+}
+
+.weather-side {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    border-radius: 3px;
+    width: 50%;
+    -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    -o-transition: transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+    -webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+    transform: translateZ(0) scale(1.02) perspective(1000px);
+    float: left;
+}
+
+.weather-side:hover {
+    -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
+    transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+
+.weather-block {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.info-side {
+    position: relative;
+    float: left;
+    /* height: 100%; */
+    padding-top: 25px;
+}
+
+.city-name {
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.today-info>div .title {
+    font-weight: 700;
+}
+
+.today-info {
+    display: flex;
+    padding: 15px;
+    margin: 0 25px 25px 25px;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.characteristic {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.characteristic img {
+    width: 30px;
+    padding: 0 5px;
+}
+
+.feelsLike {
+    font-style: italic;
+    margin: 10px;
+}
+
+.characteristic span {
+    margin: 0;
+    padding: 5px;
+}
+
+.temp {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+
+.icons {
+    width: 80px;
+}
+
+.weather-desc {
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 525px) {
+    input[type="search" i] {
+        width: 60%;
+        margin: 10px 0;
+    }
+    hr {
+        width: 60%;
+    }
+    .location-button {
+        width: 60%;
+    }
+    .container {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .weather-side {
+        width: 100%;
+    }
+    .info-side {
+        background-color: #222831;
+    }
+    .title {
+        text-align: left;
+    }
+}

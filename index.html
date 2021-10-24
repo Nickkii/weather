@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Актуальный прогноз погоды</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="https://yandex.ru/pogoda/static/favicon.ico?v=3">
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <h1>Актуальный прогноз погоды</h1>
+            <p>Более 10 000 000 местоположений по всему миру </p>
+        </div>
+    </div>
+
+    <div>
+
+        <div>
+            <div>
+                <hr>
+                <div class="weather-block">
+                    <div class="timeBlock">
+                        <span id="date"></span> | <span id="time"></span>
+                    </div>
+                    <form>
+                        <div class="location-serch">
+                            <input id="location" class="" type="search" placeholder="Введите название города...">
+
+                            <button type="submit" class="location-button">Узнать погоду</button>
+                        </div>
+                    </form>
+
+                    <div class="container">
+                        <div class="weather-side">
+                            <div class="weather-gradient"></div>
+
+                            <div class="weather-container">
+                                <div id='cityName' class="city-name"></div>
+                                <div class="temp">
+                                    <span id="temperature" class="weather-temp"></span><span id="unit">°C</span>
+                                    <div class="icons"></div>
+                                </div>
+                                <div class="feelsLike" id="feelsLike"></div>
+                                <div id="status" class="weather-desc"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="info-side">
+                            <div class="today-info-container">
+                                <div class="today-info">
+                                    <div class="characteristic">
+                                        <img src="./icons/-.png" alt="">
+                                        <span class="title">Максимальная температура сегодня:</span>
+                                        <span class="tempMax"></span>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="characteristic">
+                                        <img src="./icons/--3.png" alt="">
+                                        <span class="title">Минимальная температура сегодня:</span>
+                                        <span class="tempMin"></span>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="characteristic">
+                                        <img src="./icons/237.png" alt="">
+                                        <span class="title">Скорость ветра:</span>
+                                        <span class="windSpeed"></span>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="characteristic">
+                                        <img src="./icons/111.png" alt="">
+                                        <span class="title">Атмосферное давление:</span>
+                                        <span class="pressure"></span>
+                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="characteristic">
+                                        <img src="./icons/467.png" alt="">
+                                        <span class="title">Влажность:</span>
+                                        <span class="humidity"></span>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <a href="#location"><button type="submit" class="location-button"> Сменить город</button></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
