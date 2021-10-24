@@ -5,7 +5,7 @@ function getLocation() {
 }
 
 function getWeather(city) {
-    var api = "http://api.openweathermap.org/data/2.5/weather?lang=ru&q=";
+    var api = "https://api.openweathermap.org/data/2.5/weather?lang=ru&q=";
     var units = "&units=metric";
     var appid = "&appid=eb40569be873eddca9a3ad817c1a07fb";
     var $http = api + city + units + appid;
